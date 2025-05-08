@@ -1,7 +1,7 @@
- /*Program for BITSTUFFING and DESTUFFING*/ 
- 
-#include<stdio.h> 
-#include<string.h> 
+/*Program for BITSTUFFING and DESTUFFING*/ 
+
+#include <stdio.h> 
+#include <string.h> 
 int main() 
 {
     char ch, array[50]="01111110",read_array[50]; 
@@ -22,11 +22,11 @@ int main()
             array[i++]='0';
             count=0;
         } 
-   } while(ch!='\n'); 
-   strcat(array,"01111110"); /* FLAG pattern for START and END of HDLC frame format*/
-   printf("\n Transmitted bit stream(After stuffing) at the transmitter side is:%s",array); 
- 
- 
+    } while(ch!='\n'); 
+    strcat(array,"01111110"); /* FLAG pattern for START and END of HDLC frame format*/
+    printf("\n Transmitted bit stream(After stuffing) at the transmitter side is: %s",array); 
+  
+  
     /*DESTUFFING*/ 
     j=strlen(array); 
     count=0; 

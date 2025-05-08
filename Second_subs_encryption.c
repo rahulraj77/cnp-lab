@@ -1,8 +1,7 @@
 /*Encryption by Substitution Method*/ 
-#include<stdio.h> 
-// #include<conio.h> 
-#include<string.h> 
-#include<ctype.h> 
+#include <stdio.h>  
+#include <string.h> 
+#include <ctype.h> 
 
 void main() 
 { 
@@ -10,8 +9,8 @@ void main()
     char data[50];
     char encoded[50]; 
     int i,j,len,present=0; 
-    printf("\nEnter data:"); 
-    gets(data); 
+    printf("\nEnter data: "); 
+    fgets(data, sizeof(data), stdin); 
     len=strlen(data);
      
     for(i=0;i<len;i++) 
@@ -28,6 +27,6 @@ void main()
     
     encoded[len]='\0'; 
     
-    printf("\n encoded string is:%s",encoded); 
+    printf("Encoded string is: %s \n",encoded); 
 
 } 
